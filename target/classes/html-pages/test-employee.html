@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST EMP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css-pages/test-employee.css" />
+
+</head>
+
+<body>
+
+
+
+
+    <div class="card bg-dark text-white">
+        <img src="/imgs/sona.jpg" class="card-img" alt="DJ Sona">
+
+
+
+        <div class="card-img-overlay">
+
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-link active" aria-current="page" href="/test-employee.html">Home Page</a>
+                <a class="nav-link" href="https://proview.lolesports.com/home?_gl=1*1fouje3*_ga*MTc1MjUyNTg0OC4xNjIxNjE1ODk0*_ga_NEB48PR9J8*MTYzNDU2MTk3NS4zNS4xLjE2MzQ1NjIxNDUuMTM.">League Players</a>
+                <a class="nav-link" href="https://lolesports.com/standings/worlds/worlds_2021/groups">League Scores</a>
+                <a class="nav-link" href="/user-logout"">Logout</a>
+            </nav>
+
+            <div class=" d-flex align-items-end flex-column bd-highlight mb-3" style="height: 300px;">
+                    <div class="mt-auto p-2 bd-highlight"></div>
+        </div>
+
+        <h1 id="change" style="text-align: center;"></h1>
+        <div class="d-flex align-items-start justify-content-center" style="height: 20px;"></div>
+
+        <div class="d-flex justify-content-center gap-3">
+
+
+            <div class="card text-center" style="width: 25%;">
+
+                <div class="card-body">
+                    <h3 class="card-title">Current Elo : Silver 1</h3>
+                    <h5> Dude, how you can't even get to GOLD, but that's fine.....</h5>
+                    <p class="card-text">Don't ever stop grinding until you make it.</p>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Take Me To The Rift
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="card text-center" style="width: 25%;">
+                <div class="card-body">
+                    <h3 class="card-title">Current Level : 35</h3>
+                    <h5> Tell me you will get to level 100 TOMORROW!.....</h5>
+                    <p class="card-text">The easiest way to atract friends is to show off your high level.</p>
+                    <a href="/test-view.html" class="btn btn-primary">Jump to Queue</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Forge Minions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form id="myForm" method="POST" action="/create-reimb">
+                            <div class="form-group">
+
+                                <label for="newID">Amount $</label> <input class="form-control" name="amount"
+                                    type="text">
+                                <label for="newID">Description</label> <input class="form-control" name="description"
+                                    type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="newStatus">Reason</label> <select class="form-select" name="reason">
+                                    <option value="1">Food</option>
+                                    <option value="2">Materials</option>
+                                    <option value="3">Travel</option>
+                                </select>
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" data-bs-dismiss="modal" class="btn btn-primary"
+                            form="myForm">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js-pages/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Reimbursement</title>
+
+    <link rel="stylesheet" type="text/css" href="css-pages/styling.css" />
+
+
+</head>
+<body>
+    
+        <h2>Let's Update a New Reimbursement!</h2>
+        <h3>These are all the Pending Reimbursement</h3>
+        
+        <table id="reimbursements-table">
+
+            <tr>
+              <th id="amount">Amount</th>
+              <th id="author">Author</th>
+              <th id="resolver">Resolver</th>
+              <th id="status">Status</th>
+              <th id="type">Type</th>
+              <th id="idNumber">ID</th>
+              <th id="descript">Description</th>
+              <th id="submitted">Submitted</th>
+              <th id="resolved">Resolved</th>
+            </tr>
+
+          </table>
+
+
+        <form method="POST" action="/update-reimb">
+
+            <p>Fill the information below to update the Reimbursement</p>
+            <input type="text" id="naming" name="ticketId" placeholder="Reimbursement ID" />
+            <input type="text" name="newStatus" placeholder="Approve/Deny" />
+            <input type="submit" id="changeName" value="Update Reimbursement"/>
+
+        </form>
+
+
+        <script type="text/javascript" src="js-pages/update.js"></script>
+</body>
+</html>

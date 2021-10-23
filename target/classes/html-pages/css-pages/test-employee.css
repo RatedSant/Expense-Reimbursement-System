@@ -1,0 +1,31 @@
+.nav-link {
+    display: block;
+    text-size-adjust: center;
+    padding: .3rem 8rem;
+    color: #4e4cce;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #70a8b6;
+    background-color: #b62323;
+  }
+  
+  .nav {
+    width: 100%;
+    background-color: black;
+  }
+
+  .card{
+    background-color: #c5202061;
+  }
+
+  label {
+    display: inline-block;
+    color: blue;
+}
+
+table{
+  font-weight: 700;
+}

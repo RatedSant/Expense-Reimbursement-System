@@ -1,0 +1,25 @@
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  }
+
+  .border {
+    border: 20px solid #0e0a2aad!important;
+}
+
+.form-control {
+    color: #212529;
+    background-color: #0b090991;
+    border: 1px solid #f8f9fa;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #2b1849db;
+    border-color: #020204e0;
+}
+
+table{
+    font-weight: 700;
+  }
+
